@@ -41,18 +41,24 @@ struct ContentView: View {
                 
                 List {
                     Group {
-                        Text("1")
-                        Text("2")
-                        Text("3")
-                        Text("4")
-                        Text("5")
+                        ListItemView(leadingText: "Lap 5",
+                                     trailingText: "00:00.98",
+                                     color: .white)
+                        ListItemView(leadingText: "Lap 4",
+                                     trailingText: "00:04.08",
+                                     color: .red)
+                        ListItemView(leadingText: "Lap 3",
+                                     trailingText: "00:00.96",
+                                     color: .green)
+                        ListItemView(leadingText: "Lap 2",
+                                     trailingText: "00:02.76",
+                                     color: .white)
+                        ListItemView(leadingText: "Lap 1",
+                                     trailingText: "00:01.16",
+                                     color: .white)
                     }
                     // Set row background color
                     .listRowBackground(Color.black)
-                    // Foreground colour for text
-                    .foregroundColor(.white)
-                    // Set text size
-                    .font(.title3)
                     // Adjust separator
                     .listRowSeparatorTint(.gray)
                     // Remove inset from list items

@@ -12,6 +12,7 @@
 		8165DB59291843E2000E4A2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8165DB58291843E2000E4A2F /* Assets.xcassets */; };
 		8165DB5C291843E2000E4A2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8165DB5B291843E2000E4A2F /* Preview Assets.xcassets */; };
 		8165DB6329184C85000E4A2F /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8165DB6229184C85000E4A2F /* CircleButtonView.swift */; };
+		8165DB6529185674000E4A2F /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8165DB6429185674000E4A2F /* ListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		8165DB58291843E2000E4A2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8165DB5B291843E2000E4A2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8165DB6229184C85000E4A2F /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
+		8165DB6429185674000E4A2F /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				8165DB54291843E1000E4A2F /* StopwatchAppApp.swift */,
 				8165DB56291843E1000E4A2F /* ContentView.swift */,
+				8165DB6429185674000E4A2F /* ListItemView.swift */,
 				8165DB6229184C85000E4A2F /* CircleButtonView.swift */,
 				8165DB58291843E2000E4A2F /* Assets.xcassets */,
 				8165DB5A291843E2000E4A2F /* Preview Content */,
@@ -143,6 +146,7 @@
 				8165DB6329184C85000E4A2F /* CircleButtonView.swift in Sources */,
 				8165DB57291843E1000E4A2F /* ContentView.swift in Sources */,
 				8165DB55291843E1000E4A2F /* StopwatchAppApp.swift in Sources */,
+				8165DB6529185674000E4A2F /* ListItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
