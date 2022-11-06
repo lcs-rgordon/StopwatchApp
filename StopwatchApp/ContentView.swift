@@ -22,9 +22,17 @@ struct ContentView: View {
                     .font(.system(size: 90).weight(.thin))
                 
                 // Create a circular button
-                CircleButtonView(buttonColor: Color("DarkGrey"),
-                                 label: "Reset",
-                                 labelColor: .white)                
+                HStack {
+                    CircleButtonView(buttonColor: Color("DarkGrey"),
+                                     label: "Reset",
+                                     labelColor: .white)
+                    
+                    Spacer()
+                    
+                    CircleButtonView(buttonColor: Color("DarkGreen"),
+                                     label: "Start",
+                                     labelColor: Color("LightGreen"))
+                }
 
             }
             .padding()
