@@ -26,7 +26,7 @@ struct ContentView: View {
                     
                     // First layer
                     Circle()
-                        .foregroundColor(Color(UIColor.darkGray))
+                        .foregroundColor(Color("DarkGrey"))
                         .frame(width: 100)
                     
                     // Second layer
@@ -36,7 +36,7 @@ struct ContentView: View {
                         
                     // Third layer
                     Circle()
-                        .foregroundColor(Color(UIColor.darkGray))
+                        .foregroundColor(Color("DarkGrey"))
                         .frame(width: 89)
                     
                     // Fourth layer
