@@ -11,13 +11,13 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             // First layer
-            Color(UIColor.red)
+            Color.black
                 .ignoresSafeArea()
             
             // Second layer
             VStack {
                 Text("00:09.96")
-                    .foregroundColor(.white)
+                    .foregroundColor(Color.white)
                     .font(.system(size: 90).weight(.thin))
             }
             .padding()
