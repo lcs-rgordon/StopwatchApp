@@ -12,14 +12,13 @@ struct ContentView: View {
         ZStack {
             // First layer
             Color(UIColor.red)
-                .ignoresSafeArea()            
+                .ignoresSafeArea()
             
             // Second layer
             VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundColor(.accentColor)
-                Text("Hello, world!")
+                Text("00:09.96")
+                    .foregroundColor(.white)
+                    .font(.system(size: 90).weight(.thin))
             }
             .padding()
         }
