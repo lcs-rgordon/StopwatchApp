@@ -17,11 +17,16 @@ struct ContentView: View {
             // Second layer
             VStack {
                 
+                
+                Spacer()
+                
                 Text("00:09.96")
                     .foregroundColor(Color.white)
                     .font(.system(size: 90).weight(.thin))
                 
-                // Create a circular button
+                Spacer()
+                
+                // Both buttons
                 HStack {
                     CircleButtonView(buttonColor: Color("DarkGrey"),
                                      label: "Reset",
@@ -33,6 +38,34 @@ struct ContentView: View {
                                      label: "Start",
                                      labelColor: Color("LightGreen"))
                 }
+                
+                List {
+                    Group {
+                        Text("1")
+                        Text("2")
+                        Text("3")
+                        Text("4")
+                        Text("5")
+                    }
+                    // Set row background color
+                    .listRowBackground(Color.black)
+                    // Foreground colour for text
+                    .foregroundColor(.white)
+                    // Set text size
+                    .font(.title3)
+                    // Adjust separator
+                    .listRowSeparatorTint(.gray)
+                    // Remove inset from list items
+                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+
+                }
+                // Adjust list style to match design
+                .listStyle(.plain)
+                // Set the amount of vertical height we want this list to take up
+                .frame(height: 300)
+                // Hide white background for list
+                .scrollContentBackground(.hidden)
+
 
             }
             .padding()
