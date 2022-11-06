@@ -11,8 +11,8 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             // First layer
-            Color.pink.ignoresSafeArea()
-            
+            Color(UIColor.red)
+                .ignoresSafeArea()            
             
             // Second layer
             VStack {
