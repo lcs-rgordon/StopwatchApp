@@ -76,6 +76,40 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        TabView(selection: Binding.constant(3)) {
+            
+            Text("World Clock")
+                .tabItem {
+                    Image(systemName: "globe")
+                    Text("World Clock")
+                }
+                .tag(1)
+            
+            Text("Alarm")
+                .tabItem {
+                    Image(systemName: "alarm.fill")
+                    Text("Alarm")
+                }
+                .tag(2)
+
+            ContentView()
+                .tabItem {
+                    Image(systemName: "stopwatch.fill")
+                    Text("Stopwatch")
+                }
+                .tag(3)
+            
+            Text("Timer")
+                .tabItem {
+                    Image(systemName: "timer")
+                    Text("Timer")
+                }
+                .tag(2)
+
+        }
+        // Highlighted tab is orange
+        .accentColor(.orange)
+        // Ensure non-selected tab is visible
+        .preferredColorScheme(.dark)
     }
 }
